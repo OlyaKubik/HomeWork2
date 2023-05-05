@@ -87,6 +87,10 @@ public class HW1 {
         return fluentWait(EXPLICITY_WAIT).until(ExpectedConditions.alertIsPresent());
     }
 
+    public WebElement waitPresenceOfElementReturn(By by) {
+        return fluentWait(EXPLICITY_WAIT).until(ExpectedConditions.presenceOfElementLocated(by));
+    }
+
 
 
     }
