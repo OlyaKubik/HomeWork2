@@ -90,6 +90,9 @@ public class HW1 {
     public WebElement waitPresenceOfElementReturn(By by) {
         return fluentWait(EXPLICITY_WAIT).until(ExpectedConditions.presenceOfElementLocated(by));
     }
+    public void waitForVisabilityOfElement(By by) {
+        waitForFunction(ExpectedConditions.visibilityOfElementLocated(by), EXPLICITY_WAIT);
+    }
 
 
 
